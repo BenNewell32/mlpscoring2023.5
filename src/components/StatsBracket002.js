@@ -1,0 +1,30 @@
+import Image from 'react-bootstrap/Image'
+import {useEffect} from "react";
+import challengerpic from './bchallenger.jpg'
+// import premierpic from './bpremier.png'
+// import challengerpic from './zbchallenger.jpg'
+import premierpic from './bpremier.jpg'
+
+export const StatsBracket002 = (props) => {
+    const {division} = props;
+    
+    return (
+        window.innerWidth<760?
+        <div style={{overflow: "auto"}}>
+        <div style={{paddingBottom: "30px",  minWidth:"600px", maxWidth: "1200px"}}>
+        {division==='Challenger'?
+        <img width= "500px" src={challengerpic} alt="ground" />:
+        <img width= "500px" src={premierpic} alt="ground" />
+        }
+        </div>
+        </div>:
+        <div style={{overflow: "auto"}}>
+        <div style={{paddingBottom: "30px", minWidth:"600px", maxWidth: "1200px"}}>
+        {division==='Challenger'?
+        <img width= "1150px" src={challengerpic} alt="ground" />:
+        <img width= "1150px" src={premierpic} alt="ground" />
+        }
+        </div>
+        </div>
+    );
+};
