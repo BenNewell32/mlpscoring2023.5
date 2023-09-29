@@ -415,6 +415,8 @@ export const StatsTopTeam002Fire = (props) => {
                 >
                   {team[7]}
                 </td>
+               
+{season === "S22023" && division === 'ALL'?
                 <td
                   style={{
                     fontFamily: "SofiaCondensed",
@@ -423,10 +425,23 @@ export const StatsTopTeam002Fire = (props) => {
                     fontWeight: "bold",
                     minWidth: "75px",
                   }}
-                  id={team[8]}
+                  id={team[11]}
                 >
-                  {team[8]}
-                </td>
+                  {team[11]}
+                </td>:
+                <td
+                style={{
+                  fontFamily: "SofiaCondensed",
+                  backgroundColor:"#b2ebf2",
+                  fontSize: "16px",
+                  fontWeight: "bold",
+                  minWidth: "75px",
+                }}
+                id={team[8]}
+              >
+                {team[8]}
+              </td>
+  }
                 <td
                   style={{
                     fontFamily: "SofiaCondensed",
