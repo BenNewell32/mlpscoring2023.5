@@ -13,16 +13,16 @@ export const StatsBracket002 = (props) => {
         <div style={{overflow: "auto"}}>
         <div style={{paddingBottom: "30px",  minWidth:"600px", maxWidth: "1200px"}}>
         {division==='Challenger'?
-        <img width= "500px" src={challengerpic} alt="ground" />:
-        <img width= "500px" src={premierpic} alt="ground" />
+        <img width= "500px" src={'https://www.liftkc.com/uploads/mlp2023.5.challenger.jpg'} alt="ground" />:
+        <img width= "500px" src={'https://www.liftkc.com/uploads/mlp2023.5.premier.jpg'} alt="ground" />
         }
         </div>
         </div>:
         <div style={{overflow: "auto"}}>
         <div style={{paddingBottom: "30px", minWidth:"600px", maxWidth: "1200px"}}>
         {division==='Challenger'?
-        <img width= "1150px" src={challengerpic} alt="ground" />:
-        <img width= "1150px" src={premierpic} alt="ground" />
+        <img width= "1150px" src={'https://www.liftkc.com/uploads/mlp2023.5.challenger.jpg'} alt="ground" />:
+        <img width= "1150px" src={'https://www.liftkc.com/uploads/mlp2023.5.premier.jpg'} alt="ground" />
         }
         </div>
         </div>
