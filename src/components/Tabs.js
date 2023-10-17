@@ -34,6 +34,9 @@ export const Tabs = (props) => {
                         </MDBBtn>
                     </Row>
                     <MDBCollapse show={showShow}>
+                    <Col>
+                <AddBracket />
+              </Col>
                         <Row>
                             <Col>
                                 <CreateMatch court={"Championship Court"}
@@ -45,9 +48,7 @@ export const Tabs = (props) => {
               <Col>
                 <CreateTeam event={event} />
               </Col>  
-              <Col>
-                <AddBracket />
-              </Col>
+              
               </Row>
                     </MDBCollapse>
                     <MatchList court={"Championship Court"}
