@@ -53,7 +53,7 @@ export const TeamList = (props) => {
         <option value="Bay Area Breakers">Bay Area Breakers</option>
         <option value="Brooklyn Aces">Brooklyn Aces</option>
         <option value="Chicago Slice">Chicago Slice</option>
-        <option value="Columbus P.C.">Columbus P.C.</option>
+        <option value="Columbus Sliders">Columbus Sliders</option>
         <option value="D.C. Pickleball Team">D.C. Pickleball Team</option>
         <option value="Dallas Picklebal Club">Dallas Picklebal Club</option>
         <option value="Frisco Pandas">Frisco Pandas</option>

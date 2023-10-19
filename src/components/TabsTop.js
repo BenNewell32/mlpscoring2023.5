@@ -20,7 +20,7 @@ export const TabsTop = (props) => {
   const mobileScreen = width < 900 ? background : background2;
 
   const [currentTab, setCurrentTab] = useState("11");
-  const eventLocation = "Atlanta, GA";
+  const eventLocation = "Dallas, TX";
   const tabs = [
     {
       id: 11,

@@ -5,7 +5,7 @@ import { TabsAnalytics } from "./TabsAnalytics";
 
 export const TabsDivision = (props) => {
   const [currentTab, setCurrentTab] = useState("1");
-  const eventLocation = "Atlanta, GA";
+  const eventLocation = "Dallas, TX";
   const tabs = [
     {
       id: 1,

@@ -3,7 +3,7 @@ import Button from "react-bootstrap/Button";
 import { Tabs } from "./Tabs";
 
 export const TabsEvents = (props) => {
-  const [currentTab, setCurrentTab] = useState("4");
+  const [currentTab, setCurrentTab] = useState("5");
   const tabs = [
     {
       id: 1,
@@ -43,10 +43,10 @@ export const TabsEvents = (props) => {
     },
     {
       id: 5,
-      tabTitle: "La Quinta, CA",
+      tabTitle: "Dallas, TX",
       content: (
         <>
-          <Tabs event={"La Quinta, CA"} />
+          <Tabs event={"Dallas, TX"} />
         </>
       ),
     },

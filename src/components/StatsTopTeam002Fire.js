@@ -10,47 +10,47 @@ import { db } from "../firebase-config";
 import { collection, where, query, getDocs } from "firebase/firestore";
 
 export const StatsTopTeam002Fire = (props) => {
-  const { division, round, season} = props;
+  const { division, round, season } = props;
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [items, setItems] = useState([]);
-  console.log( division);
-  console.log(round );
-  console.log( season);
+  console.log(division);
+  console.log(round);
+  console.log(season);
 
   useEffect(() => {
     (async () => {
       let listMatches = "";
       if (division === "Premier" && round === "ALL" && season === "S12023") {
         listMatches = query(collection(db, "002SeasonPremierTeamTotal"));
-        console.log("002SeasonPremierTeamTotal")
-
+        console.log("002SeasonPremierTeamTotal");
       }
 
       if (division === "Challenger" && round === "ALL" && season === "S12023") {
         listMatches = query(collection(db, "002SeasonChallengerTeamTotal"));
-        console.log("002SeasonChallengerTeamTotal")
-
+        console.log("002SeasonChallengerTeamTotal");
       }
 
       if (division === "ALL" && round === "ALL" && season === "S12023") {
         listMatches = query(collection(db, "002SeasonAllTeamTotal"));
-        console.log("002SeasonAllTeamTotal")
+        console.log("002SeasonAllTeamTotal");
       }
 
       if (division === "Premier" && round === "ALL" && season === "S22023") {
         listMatches = query(collection(db, "002SeasonPremierTeamTotalS22023"));
-        console.log("002SeasonPremierTeamTotalS22023")
+        console.log("002SeasonPremierTeamTotalS22023");
       }
 
       if (division === "Challenger" && round === "ALL" && season === "S22023") {
-        listMatches = query(collection(db, "002SeasonChallengerTeamTotalS22023"));
-        console.log("002SeasonChallengerTeamTotalS22023")
+        listMatches = query(
+          collection(db, "002SeasonChallengerTeamTotalS22023")
+        );
+        console.log("002SeasonChallengerTeamTotalS22023");
       }
 
       if (division === "ALL" && round === "ALL" && season === "S22023") {
         listMatches = query(collection(db, "002SeasonAllTeamTotalS22023"));
-        console.log("002SeasonAllTeamTotalS22023")
+        console.log("002SeasonAllTeamTotalS22023");
       }
 
       const querySnapshot = await getDocs(listMatches);
@@ -341,7 +341,7 @@ export const StatsTopTeam002Fire = (props) => {
                               src={require("./pngmiami.png")}
                             />
                           ) : null}
-                          {team[1] === "COLUMBUS P.C." ? (
+                          {team[1] === "COLUMBUS SLIDERS" ? (
                             <Image
                               style={{ width: "30px" }}
                               src={require("./pngcolumbus.png")}
@@ -415,33 +415,34 @@ export const StatsTopTeam002Fire = (props) => {
                 >
                   {team[7]}
                 </td>
-               
-{season === "S22023" && division === 'ALL'?
-                <td
-                  style={{
-                    fontFamily: "SofiaCondensed",
-                    backgroundColor:"#b2ebf2",
-                    fontSize: "16px",
-                    fontWeight: "bold",
-                    minWidth: "75px",
-                  }}
-                  id={team[11]}
-                >
-                  {team[11]}
-                </td>:
-                <td
-                style={{
-                  fontFamily: "SofiaCondensed",
-                  backgroundColor:"#b2ebf2",
-                  fontSize: "16px",
-                  fontWeight: "bold",
-                  minWidth: "75px",
-                }}
-                id={team[8]}
-              >
-                {team[8]}
-              </td>
-  }
+
+                {season === "S22023" && division === "ALL" ? (
+                  <td
+                    style={{
+                      fontFamily: "SofiaCondensed",
+                      backgroundColor: "#b2ebf2",
+                      fontSize: "16px",
+                      fontWeight: "bold",
+                      minWidth: "75px",
+                    }}
+                    id={team[11]}
+                  >
+                    {team[11]}
+                  </td>
+                ) : (
+                  <td
+                    style={{
+                      fontFamily: "SofiaCondensed",
+                      backgroundColor: "#b2ebf2",
+                      fontSize: "16px",
+                      fontWeight: "bold",
+                      minWidth: "75px",
+                    }}
+                    id={team[8]}
+                  >
+                    {team[8]}
+                  </td>
+                )}
                 <td
                   style={{
                     fontFamily: "SofiaCondensed",

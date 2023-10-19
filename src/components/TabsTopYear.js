@@ -4,33 +4,33 @@ import { TabsTopDivision } from "./TabsTopDivision";
 
 export const TabsTopYear = (props) => {
   const [currentTab, setCurrentTab] = useState("32");
-  const eventLocation = "Atlanta, GA";
+  const eventLocation = "Dallas, TX";
   const tabs = [
     {
       id: 31,
       tabTitle: "SEASON ONE",
-      tabSubtitle:"(1-2-3)",
-      tabEvent1:"Mesa, AZ",
-      tabEvent2:"Daytona, FL",
-      tabEvent3:"San Clemente, CA",
+      tabSubtitle: "(1-2-3)",
+      tabEvent1: "Mesa, AZ",
+      tabEvent2: "Daytona, FL",
+      tabEvent3: "San Clemente, CA",
 
       content: (
         <>
-          <TabsTopDivision location={eventLocation} season='S12023' />
+          <TabsTopDivision location={eventLocation} season="S12023" />
         </>
       ),
     },
     {
       id: 32,
       tabTitle: "SEASON TWO",
-      tabSubtitle:"(4-5-6)",
-      tabEvent1:"Atlanta, GA",
-      tabEvent2:"Los Angeles, CA",
-      tabEvent3:"Social, CA",
+      tabSubtitle: "(4-5-6)",
+      tabEvent1: "Atlanta, GA",
+      tabEvent2: "Dallas, TX",
+      tabEvent3: "Social, CA",
 
       content: (
         <>
-          <TabsTopDivision location={eventLocation} season='S22023'/>
+          <TabsTopDivision location={eventLocation} season="S22023" />
         </>
       ),
     },
@@ -96,12 +96,11 @@ export const TabsTopYear = (props) => {
           alignContent: "center",
           justifyContent: "center",
           backgroundColor: "#0a2137", //HERE WHITE
-          marginTop:'-16px',
+          marginTop: "-16px",
           padding: "0px",
         }}
         className="container"
       >
-
         <div
           style={{ backgroundColor: "#0a2137" }}
           className="tabs d-flex justify-content-around"
@@ -120,12 +119,12 @@ export const TabsTopYear = (props) => {
                 lineHeight: "15px",
                 fontWeight: "400",
                 height: "50px",
-                margin:"10px",
+                margin: "10px",
                 width: "40%",
                 borderRadius: "0px",
-                borderColor:"white",
-                borderWidth:"1px",
-                borderStyle:"solid",
+                borderColor: "white",
+                borderWidth: "1px",
+                borderStyle: "solid",
                 transform: "skewX(-20deg)",
                 fontFamily: "SofiaCondensed",
               }}

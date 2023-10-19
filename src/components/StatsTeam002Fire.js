@@ -449,7 +449,7 @@ export const StatsTeam002Fire = (props) => {
                                                 null
                                             }
                                             {
-                                                team[1]==='COLUMBUS P.C.'?
+                                                team[1]==='COLUMBUS SLIDERS'?
                                                 <Image style={
                                                     {width: "30px"}
                                                 }

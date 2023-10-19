@@ -6,22 +6,30 @@ import { TabsTopAnalytics } from "./TabsTopAnalytics";
 export const TabsTopDivision = (props) => {
   const { season } = props;
   const [currentTab, setCurrentTab] = useState("1");
-  const eventLocation = "Atlanta, GA";
+  const eventLocation = "Dallas, TX";
   const tabs = [
     {
       id: 1,
       content: (
-          <>
-          <TabsTopAnalytics location={eventLocation} season={season} event={"ALL"} />
-          </>
+        <>
+          <TabsTopAnalytics
+            location={eventLocation}
+            season={season}
+            event={"ALL"}
+          />
+        </>
       ),
-      },
+    },
     {
       id: 2,
       tabTitle: "PREMIER",
       content: (
         <>
-          <TabsTopAnalytics location={eventLocation} season={season} event={"Premier"} />
+          <TabsTopAnalytics
+            location={eventLocation}
+            season={season}
+            event={"Premier"}
+          />
         </>
       ),
     },
@@ -30,7 +38,11 @@ export const TabsTopDivision = (props) => {
       tabTitle: "CHALLENGER",
       content: (
         <>
-          <TabsTopAnalytics location={eventLocation} season={season} event={"Challenger"} />
+          <TabsTopAnalytics
+            location={eventLocation}
+            season={season}
+            event={"Challenger"}
+          />
         </>
       ),
     },
@@ -43,7 +55,6 @@ export const TabsTopDivision = (props) => {
       document.getElementById("1").style.backgroundColor = "white";
       document.getElementById("2").style.backgroundColor = "#44566e";
       document.getElementById("3").style.backgroundColor = "#44566e";
-
     }
     if (e.target.id === "2") {
       document.getElementById("2").style.backgroundColor = "white";
@@ -104,7 +115,6 @@ export const TabsTopDivision = (props) => {
         }}
         className="container"
       >
-
         <div
           style={{ backgroundColor: "#0a2137" }}
           className="tabs d-flex justify-content-around"
