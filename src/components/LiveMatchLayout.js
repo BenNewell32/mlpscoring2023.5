@@ -27,6 +27,9 @@ import {
 } from "firebase/firestore";
 
 export const LiveMatchLayout = (props) => {
+
+    let weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
     let suffixes =
     //    0     1     2     3     4     5     6     7     8     9
     [
@@ -185,7 +188,7 @@ export const LiveMatchLayout = (props) => {
                             }
                         }
                         className="font-sofia">
-                        SUNDAY
+                        {weekday[new Date().getDay()].toUpperCase()}
                      </Col>
                 </Row>
                 <Row className="justify-content-md-center">
