@@ -56,7 +56,7 @@ export const PlayerList = (props) => {
         <option value="New Jersey 5's">New Jersey 5's</option>
         <option value="NY Hustlers">NY Hustlers</option>
         <option value="Seattle Pioneers">Seattle Pioneers</option>
-        <option value="Social Hard Eights">Social Hard Eights</option>
+        <option value="Socal Hard Eights">Socal Hard Eights</option>
         <option value="STL Shock">STL Shock</option>
         <option value="AZ Drive">AZ Drive</option>
         <option value="ATL Bouncers">ATL Bouncers</option>

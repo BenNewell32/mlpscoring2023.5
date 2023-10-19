@@ -135,7 +135,7 @@ export const StatsTeamBen = (props) => {
               case "Seattle Pioneers":
                 logo1 = "pioneers";
                 break;
-              case "Hard Eights":
+              case "Socal Hard Eights":
                 logo1 = "eights";
                 break;
               case "STL Shock":

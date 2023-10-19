@@ -59,7 +59,7 @@ export const CreateMatch = (props) => {
       case "Seattle Pioneers":
         logo1 = "pioneers";
         break;
-      case "Hard Eights":
+      case "Socal Hard Eights":
         logo1 = "eights";
         break;
       case "STL Shock":
@@ -112,7 +112,7 @@ export const CreateMatch = (props) => {
       case "Las Vegas Night Owls":
         logo2 = "lv";
         break;
-      case "Hard Eights":
+      case "Socal Hard Eights":
         logo2 = "eights";
         break;
       case "California BLQK Bears":
@@ -142,7 +142,7 @@ export const CreateMatch = (props) => {
       case "Seattle Pioneers":
         logo2 = "pioneers";
         break;
-      case "Hard Eights":
+      case "Socal Hard Eights":
         logo2 = "eights";
         break;
       case "STL Shock":

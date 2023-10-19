@@ -8,7 +8,7 @@ import { ScheduledMatches } from "./ScheduledMatches";
 export const TabsRound = (props) => {
   const { division, location } = props;
 
-  const [currentTab, setCurrentTab] = useState("4");
+  const [currentTab, setCurrentTab] = useState("1");
   const tabs = [
     {
       id: 1,
