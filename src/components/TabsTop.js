@@ -7,19 +7,17 @@ import LogoImage from "./logo.png";
 import background from "./ATLANTA.jpg";
 import background2 from "./ATLANTA2.PNG";
 
-
 import { TabsDivision } from "./TabsDivision";
 import { TabsTopYear } from "./TabsTopYear";
 import { SeasonFinals } from "./SeasonFinals";
 import useWindowDimensions from "./WindowDimensions";
-
 
 export const TabsTop = (props) => {
   var sectionStyle = {
     backgroundImage: `url(${LogoImage})`,
   };
   const { height, width } = useWindowDimensions();
-  const mobileScreen = width<900? background: background2;
+  const mobileScreen = width < 900 ? background : background2;
 
   const [currentTab, setCurrentTab] = useState("11");
   const eventLocation = "Atlanta, GA";
@@ -27,7 +25,7 @@ export const TabsTop = (props) => {
     {
       id: 11,
       tabTitle: "SCORING/STANDINGS",
-      
+
       content: (
         <>
           <TabsDivision />
@@ -67,10 +65,11 @@ export const TabsTop = (props) => {
   ];
 
   const handleTabClick = (e) => {
-   if (e.target.id === "12") {
-    window.location.href = "https://www.majorleaguepickleball.net/atlanta-streaming/"
+    if (e.target.id === "12") {
+      window.location.href =
+        "https://www.majorleaguepickleball.net/atlanta-streaming/";
     }
-    
+
     // console.log("firing");
     // console.log(e.target.id);
     setCurrentTab(e.target.id);
@@ -167,7 +166,7 @@ export const TabsTop = (props) => {
                 lineHeight: "14px",
                 fontWeight: "600",
                 height: "30px",
-                margin:"10px",
+                margin: "10px",
                 width: "30%",
                 borderRadius: "0px",
                 transform: "skewX(-20deg)",
@@ -188,7 +187,7 @@ export const TabsTop = (props) => {
               <div
                 id={tab.id}
                 onClick={handleTabClick}
-                style={{transform: "skewX(20deg)"}}
+                style={{ transform: "skewX(20deg)" }}
               >
                 <a id={tab.id} onClick={handleTabClick}>
                   {tab.tabTitle}
@@ -197,79 +196,82 @@ export const TabsTop = (props) => {
             </Button>
           ))}{" "}
         </div>
-        {currentTab === "11"?
-        <>
-        <div
-          align="center"
-          
-          style={{
-            paddingBottom: "5px",
-
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            // background: "center",
-            // backgroundImage: `url(${background})`
-            backgroundImage:
-              // "linear-gradient(to bottom, transparent 0%, white 95%)," +
-              `url(${mobileScreen})`,
-          }}
-        >
-          <div
-            style={{
-              // maxWidth: "1700px",
-              paddingTop: "20px",
-              paddingBottom: "10px",
-            }}
-          >
+        {currentTab === "11" ? (
+          <>
             <div
+              align="center"
               style={{
-                paddingTop: "50px",
-                // paddingBottom: "15px",
-                textAlign: "center",
+                paddingBottom: "5px",
+
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+                // background: "center",
+                // backgroundImage: `url(${background})`
+                backgroundImage:
+                  // "linear-gradient(to bottom, transparent 0%, white 95%)," +
+                  `url(${mobileScreen})`,
               }}
             >
-              <img
-                style={{ width: "100vw", maxWidth: "600px" }}
-                src={AtlantaLogo}
-                alt="React Logo"
-              />
+              <div
+                style={{
+                  // maxWidth: "1700px",
+                  paddingTop: "20px",
+                  paddingBottom: "10px",
+                }}
+              >
+                <div
+                  style={{
+                    paddingTop: "50px",
+                    // paddingBottom: "15px",
+                    textAlign: "center",
+                  }}
+                >
+                  <img
+                    style={{ width: "100vw", maxWidth: "600px" }}
+                    src={AtlantaLogo}
+                    alt="React Logo"
+                  />
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        
-        <div
+
+            <div
               align="center"
               style={{
                 fontSize: "calc(1.2em + 1.2vw)",
                 color: "#ef612d",
                 fontFamily: "kanit",
                 paddingTop: "10px",
-
               }}
             >
-              SCORING AND STANDINGS
+              DALLAS SCORING AND STANDINGS
             </div>
-            </>:<></>}
+          </>
+        ) : (
+          <></>
+        )}
         <div className="content">
-          {tabs.map((tab, i) => (
-            i===2?
-            <div key={i}>
-              {currentTab === `${tab.id}` && (
-                <div>
-                  <p className="title">{tab.title}</p>
-                  <div>{tab.content}</div>
-                </div>
-              )}{" "}
-            </div>:
-            <div key={i}>
-            {currentTab === `${tab.id}` && (
-              <div>
-                <p className="title">{tab.title}</p>
-                <div>{tab.content}</div>
+          {tabs.map((tab, i) =>
+            i === 2 ? (
+              <div key={i}>
+                {currentTab === `${tab.id}` && (
+                  <div>
+                    <p className="title">{tab.title}</p>
+                    <div>{tab.content}</div>
+                  </div>
+                )}{" "}
               </div>
-            )}{" "}
-          </div>
-          ))}{" "}
+            ) : (
+              <div key={i}>
+                {currentTab === `${tab.id}` && (
+                  <div>
+                    <p className="title">{tab.title}</p>
+                    <div>{tab.content}</div>
+                  </div>
+                )}{" "}
+              </div>
+            )
+          )}{" "}
         </div>
       </div>
     </>
