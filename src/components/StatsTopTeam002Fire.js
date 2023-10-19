@@ -552,7 +552,7 @@ export const StatsTopTeam002Fire = (props) => {
                 >
                   {team[16]}
                 </td> */}
-                {/* <td
+                <td
                   style={{
                     fontFamily: "SofiaCondensed",
                     fontSize: "16px",
@@ -562,7 +562,7 @@ export const StatsTopTeam002Fire = (props) => {
                   id={team[17]}
                 >
                   {team[17]}
-                </td> */}
+                </td>
                 <td
                   style={{
                     fontFamily: "SofiaCondensed",
