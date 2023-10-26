@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 
 // import LogoImage from "./Capture2.svg";
-import AtlantaLogo from "./MLP_Atlanta3.svg";
+import AtlantaLogo from "./DALLAS3.png";
 import LogoImage from "./logo.png";
-import background from "./ATLANTA.jpg";
-import background2 from "./ATLANTA2.PNG";
+import background from "./DALLAS.PNG";
+import background2 from "./DALLAS1.jpg";
 
 import { TabsDivision } from "./TabsDivision";
 import { TabsTopYear } from "./TabsTopYear";
