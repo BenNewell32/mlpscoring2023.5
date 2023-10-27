@@ -187,7 +187,7 @@ export const ScheduledMatchLayout = (props) => {
                         live === true ? "" : ":" + match.startTime.split(":")[1]
                     }
                         {
-                        live === true ? "" : match.startTime.split(":")[0] < 12 ? " AM ET" : " PM ET"
+                        live === true ? "" : match.startTime.split(":")[0] < 12 ? " AM CT" : " PM CT"
                     } </Col>
                 </Row>
 

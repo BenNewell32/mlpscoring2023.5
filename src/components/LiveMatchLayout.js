@@ -217,7 +217,7 @@ export const LiveMatchLayout = (props) => {
                         live === true ? "" : ":" + matchLive.startTime.split(":")[1]
                     }
                         {
-                        live === true ? "" : matchLive.startTime.split(":")[0] < 12 ? " AM ET" : " PM ET"
+                        live === true ? "" : matchLive.startTime.split(":")[0] < 12 ? " AM CT" : " PM CT"
                     } </Col>
                 </Row>
 

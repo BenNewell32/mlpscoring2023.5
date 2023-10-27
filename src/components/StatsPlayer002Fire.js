@@ -315,7 +315,7 @@ export const StatsPlayer002Fire = (props) => {
                               src={require("./pngmiami.png")}
                             />
                           ) : null}
-                          {team[3].toUpperCase() === "Sliders" ? (
+                          {team[3].toUpperCase() ===  "COLUMBUS SLIDERS" ? (
                             <Image
                               style={{ width: "30px" }}
                               src={require("./pngcolumbus.png")}
