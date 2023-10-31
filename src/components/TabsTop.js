@@ -67,7 +67,7 @@ export const TabsTop = (props) => {
   const handleTabClick = (e) => {
     if (e.target.id === "12") {
       window.location.href =
-        "https://www.majorleaguepickleball.net/atlanta-streaming/";
+        "https://www.majorleaguepickleball.net/dallas-streaming/";
     }
 
     // console.log("firing");

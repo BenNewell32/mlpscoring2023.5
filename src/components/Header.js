@@ -350,7 +350,7 @@ export const Header = (props) => {
                  <FaTiktok style={{marginLeft:"5px"}}/>
                  </a>
                 </div>
-                <Nav.Link href="https://www.majorleaguepickleball.net/atlanta-streaming/" style={{color:'#ef612d', width: '25px', height: '25px', marginTop: '-10px', marginLeft: '-5px' }}><div style={{textAlign: 'center', color:'#fc6044', fontSize:'18px', fontWeight:"bold",  fontFamily: "SofiaCondensed", letterSpacing: ".5px"}}>WATCH</div></Nav.Link>
+                <Nav.Link href="https://www.majorleaguepickleball.net/dallas-streaming/" style={{color:'#ef612d', width: '25px', height: '25px', marginTop: '-10px', marginLeft: '-5px' }}><div style={{textAlign: 'center', color:'#fc6044', fontSize:'18px', fontWeight:"bold",  fontFamily: "SofiaCondensed", letterSpacing: ".5px"}}>WATCH</div></Nav.Link>
                 
 
                 <Navbar.Toggle style={
