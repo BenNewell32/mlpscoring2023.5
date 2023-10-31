@@ -16,6 +16,7 @@ export const Auth = (props) => {
     "D7hsk8Rf8cbWJYWRnGoFjDjJ4KT2",
     "Nvv6MjyfcgcRyq8k577kLhcrKnV2",
     "EdIXMjRwzgPD10MwC5iYiDZjeIE2",
+    "KNBKqro71TTNrPLIJjJX7Bq71pH3",
 ];
     const {setIsAuth} = props;
     const signInWithGoogle = async () => {
